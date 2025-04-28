@@ -14,12 +14,13 @@ __version__ = "0.0.1"
    Guy Shinar and Martin Feinberg,
    Structural Sources of Robustness in Biochemical Reaction Networks, Science, 2010."""
 
-#filename = "data/reactions/acr/acr_1"
-filename = "data/reactions/acr/butlerov.txt"
+filename = "data/reactions/acr/acr_1"
+#filename = "data/reactions/acr/butlerov.txt"
 crn = from_react_file(filename)
 for r in crn.reactions: print(r)
 print("")
 print("Terminal complexes: {}".format(crn.terminal_complexes))
+print(len(crn.terminal_complexes))
 print("Nonterminal complexes: {}".format(crn.non_terminal_complexes))
 print("Deficiency: {}".format(crn.deficiency))
 print("ACR in species: {}".format(", ".join(crn.acr_species())))
