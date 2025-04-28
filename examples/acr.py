@@ -14,7 +14,8 @@ __version__ = "0.0.1"
    Guy Shinar and Martin Feinberg,
    Structural Sources of Robustness in Biochemical Reaction Networks, Science, 2010."""
 
-filename = "data/reactions/acr/acr_1"
+#filename = "data/reactions/acr/acr_1"
+filename = "data/reactions/acr/neigenfind_ex1"
 crn = from_react_file(filename)
 for r in crn.reactions: print(r)
 print("")
